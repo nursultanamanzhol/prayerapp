@@ -1,7 +1,8 @@
-package com.example.prayer_app
+package com.example.prayer_app.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.prayer_app.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
