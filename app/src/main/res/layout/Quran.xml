@@ -7,48 +7,62 @@
     android:background="@color/colorPrimaryDark"
     android:fitsSystemWindows="true">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom"
-        android:background="@drawable/bg_rounded_all"
-        android:backgroundTint="@color/colorPrimary"
-        android:gravity="bottom"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:text="Prayer App"
-            android:textColor="@android:color/white"
-            android:textSize="60sp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="70dp"
-            android:layout_marginBottom="30dp"
-            android:text="Quran"
-            android:textColor="@android:color/white"
-            android:textSize="35sp"
-            android:textStyle="bold" />
+        <FrameLayout
+            android:id="@+id/frameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="309dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:elevation="5dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/quran_PNG42"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_rounded_all"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="bottom"
+                android:orientation="vertical">
 
-            app:riv_corner_radius_bottom_left="40dp"
-            app:riv_corner_radius_bottom_right="40dp"
-            app:riv_corner_radius_top_left="40dp"
-            tools:ignore="ContentDescription" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Prayer App"
+                    android:textColor="@android:color/white"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="309dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:elevation="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/quran_PNG42"
+
+                    app:riv_corner_radius_bottom_left="40dp"
+                    app:riv_corner_radius_bottom_right="40dp"
+                    app:riv_corner_radius_top_left="40dp"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Quran"
+                    android:textColor="@android:color/white"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
 
 
-    </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
 
 
+    </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
