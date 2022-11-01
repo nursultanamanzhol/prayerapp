@@ -37,6 +37,7 @@
             android:text="Dini kitaphana"
             android:textColor="@android:color/holo_orange_light"
             android:textSize="40sp"
+
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -54,6 +55,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="320dp"
                 android:orientation="horizontal">
+
+
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="180dp"
