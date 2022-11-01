@@ -7,7 +7,7 @@
     android:background="@drawable/mainbg"
     android:fitsSystemWindows="true"
     android:gravity="center"
-    tools:context=".activities.">
+    tools:context=".activities.MainActivity">
 
     <RelativeLayout
         android:layout_width="wrap_content"
