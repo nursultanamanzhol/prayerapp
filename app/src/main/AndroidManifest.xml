@@ -13,13 +13,6 @@
         android:theme="@style/Theme.Prayerapp"
         tools:targetApi="31">
         <activity
-            android:name=".library_act"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".namaz_acitivity"
             android:exported="false">
             <meta-data

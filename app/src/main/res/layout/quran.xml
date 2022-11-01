@@ -42,13 +42,12 @@
 
                 <ImageView
                     android:id="@+id/ttext"
-                    android:layout_width="210dp"
+                    android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:contentDescription="@string/todo"
                     android:elevation="5dp"
                     android:scaleType="centerCrop"
-
                     android:src="@drawable/quran1" />
 
                 <TextView
