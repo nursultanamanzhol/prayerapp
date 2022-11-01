@@ -3,5 +3,7 @@
     <string name="prayer_app">Prayer App</string>
     <string name="todo">TODO</string>
     <string name="quran">Quran</string>
+    <string name="bismillah">Bismillah</string>
+    <string name="get_started">Get Started</string>
 
 </resources>

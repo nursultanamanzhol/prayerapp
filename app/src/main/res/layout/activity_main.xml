@@ -1,44 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
     tools:context=".activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="UselessParent">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="86dp"
-        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="180dp"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="MissingConstraints" />
+        <FrameLayout
+            android:id="@+id/frameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="19dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_rounded_all"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/prayer_app"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/ttext"
+                    android:layout_width="381dp"
+                    android:layout_height="381dp"
+                    android:layout_marginBottom="100dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/todo"
+                    android:elevation="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/quran1" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="308dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttons"
+                    android:text="@string/get_started"
+                    android:textSize="30sp"
+                    android:layout_marginBottom="30dp"
+                    />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

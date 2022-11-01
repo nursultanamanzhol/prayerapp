@@ -10,8 +10,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:ignore="UselessParent">
+
 
         <FrameLayout
             android:id="@+id/frameHeader"
@@ -51,11 +52,11 @@
                 <Button
                     android:id="@+id/StartBismillah"
                     android:layout_width="308dp"
-                    android:layout_height="135dp"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:background="@drawable/buttons"
-                    android:text="Bismillah"
-                    android:textSize="40dp"
+                    android:text="@string/bismillah"
+                    android:textSize="40sp"
 
                     />
             </LinearLayout>
