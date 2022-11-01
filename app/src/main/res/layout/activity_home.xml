@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:fitsSystemWindows="true"
     android:gravity="center"
     tools:context=".activities.bismillah_act">
@@ -20,7 +21,7 @@
             android:layout_height="136dp"
             android:layout_gravity="bottom"
             android:layout_marginStart="20dp"
-            android:background="@drawable/bg_rounded_all"
+            android:background="@drawable/homebg"
             android:gravity="bottom"
             android:orientation="vertical">
 
@@ -64,7 +65,7 @@
             android:layout_height="136dp"
             android:layout_gravity="bottom"
             android:layout_marginStart="20dp"
-            android:background="@drawable/bg_rounded_all"
+            android:background="@drawable/homebg"
             android:gravity="bottom"
             android:orientation="vertical">
 
@@ -109,7 +110,7 @@
             android:layout_height="136dp"
             android:layout_gravity="bottom"
             android:layout_marginStart="20dp"
-            android:background="@drawable/bg_rounded_all"
+            android:background="@drawable/homebg"
             android:gravity="bottom"
             android:orientation="vertical">
 
@@ -153,7 +154,7 @@
             android:layout_height="136dp"
             android:layout_gravity="bottom"
             android:layout_marginStart="20dp"
-            android:background="@drawable/bg_rounded_all"
+            android:background="@drawable/homebg"
             android:gravity="bottom"
             android:orientation="vertical">
 

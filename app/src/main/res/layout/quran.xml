@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:gravity="center"
-    tools:context=".activities."
+    tools:context=".activities.MainActivity"
     android:orientation="horizontal">
 
 
@@ -42,13 +42,14 @@
 
                 <ImageView
                     android:id="@+id/ttext"
-                    android:layout_width="309dp"
+                    android:layout_width="210dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
+                    android:contentDescription="@string/todo"
                     android:elevation="5dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/quranicon"
-                    android:contentDescription="@string/todo" />
+
+                    android:src="@drawable/quran1" />
 
                 <TextView
                     android:layout_width="wrap_content"

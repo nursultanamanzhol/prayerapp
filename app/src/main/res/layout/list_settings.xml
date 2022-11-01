@@ -40,13 +40,13 @@
 <!--            android:layout_toEndOf="@id/relativeRow"-->
 <!--            android:orientation="vertical">-->
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                app:expansion_headerIndicator="@+id/headerIndicator"-->
-<!--                app:expansion_layout="@+id/expansionLayout"-->
-<!--                app:expansion_toggleOnClick="true"-->
-<!--                >-->
+<!--&lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:expansion_headerIndicator="@+id/headerIndicator"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:expansion_layout="@+id/expansionLayout"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:expansion_toggleOnClick="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
 
 <!--                <TextView-->
 <!--                    android:id="@+id/txtName"-->
@@ -58,7 +58,7 @@
 <!--                    android:textIsSelectable="true"-->
 <!--                    android:textSize="30sp"-->
 <!--                    android:textStyle="bold"-->
-<!--                    />-->
+<!--                    tools:ignore="TouchTargetSizeCheck" />-->
 
 <!--                <ImageView-->
 <!--                    android:id="@+id/headerIndicator"-->

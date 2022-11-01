@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
     android:fitsSystemWindows="true"
     android:gravity="center"
-    tools:context=".activities.MainActivity">
+    tools:context=".activities.">
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="UselessParent">
 
@@ -20,32 +21,34 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="700dp"
-                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="690dp"
+                android:layout_gravity="center"
                 android:background="@drawable/bg_rounded_all"
 
                 android:gravity="bottom"
                 android:orientation="vertical">
 
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
-                    android:layout_marginBottom="10dp"
                     android:layout_marginTop="0dp"
+                    android:layout_marginBottom="50dp"
                     android:text="@string/prayer_app"
-                    android:textColor="#FAA425"
+                            android:textColor="?android:attr/colorActivatedHighlight"
                     android:textSize="60sp"
                     android:textStyle="bold" />
-
 
                 <ImageView
                     android:id="@+id/ttext"
                     android:layout_width="381dp"
                     android:layout_height="381dp"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="70dp"
+                    android:layout_marginBottom="20dp"
+
+                    android:background="@drawable/buttons"
                     android:contentDescription="@string/todo"
                     android:elevation="5dp"
                     android:scaleType="centerCrop"
@@ -53,19 +56,22 @@
 
                 <Button
                     android:id="@+id/button"
-                    android:layout_width="270dp"
-                    android:layout_height="55dp"
+                    android:layout_width="273dp"
+                    android:layout_height="53dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="40dp"
                     android:background="@drawable/buttons"
                     android:text="@string/get_started"
+                    android:textColor="@color/white"
                     android:textSize="25sp" />
+
 
             </LinearLayout>
 
         </FrameLayout>
 
 
-
     </RelativeLayout>
+
+
 </LinearLayout>
