@@ -40,23 +40,25 @@
 
                 <ImageView
                     android:id="@+id/ttext"
-                    android:layout_width="381dp"
-                    android:layout_height="381dp"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
                     android:layout_gravity="center"
                     android:contentDescription="@string/todo"
-                    android:elevation="5dp"
+                    android:elevation="10dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/quran1" />
 
 
                 <Button
                     android:id="@+id/StartBismillah"
-                    android:layout_width="308dp"
+                    android:layout_width="280dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:background="@drawable/buttons"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"
                     android:text="@string/bismillah"
-                    android:textSize="40sp"
+                    android:textSize="30sp"
 
                     />
             </LinearLayout>
