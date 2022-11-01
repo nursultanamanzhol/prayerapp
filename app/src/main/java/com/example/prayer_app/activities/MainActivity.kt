@@ -13,7 +13,7 @@ import com.example.prayer_app.R.layout.quran
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(quran)
+        setContentView(activity_main)
 
 //        val btn = findViewById<Button>(R.id.button)
 //        btn.setOnClickListener {

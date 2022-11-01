@@ -7,7 +7,7 @@
     android:background="@drawable/mainbg"
     android:fitsSystemWindows="true"
     android:gravity="center"
-    tools:context=".activities.">
+    tools:context=".activities.MainActivity">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -33,12 +33,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="50dp"
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="50dp"
                     android:text="@string/prayer_app"
-                            android:textColor="?android:attr/colorActivatedHighlight"
+                    android:textColor="?android:attr/colorActivatedHighlight"
                     android:textSize="60sp"
+                    android:layout_gravity="center"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -53,6 +53,7 @@
                     android:elevation="5dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/mosque" />
+
 
                 <Button
                     android:id="@+id/button"
