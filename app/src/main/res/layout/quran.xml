@@ -53,7 +53,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="70dp"
+                    android:layout_gravity="center"
                     android:layout_marginBottom="30dp"
                     android:text="@string/quran"
                     android:textColor="@color/material_dynamic_neutral_variant10"
