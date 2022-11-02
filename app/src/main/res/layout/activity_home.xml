@@ -6,7 +6,7 @@
 
     android:fitsSystemWindows="true"
     android:gravity="center"
-    tools:context=".activities.bismillah_act">
+    tools:context=".activities.home_act">
 
     <FrameLayout
         android:id="@+id/frameHeader"

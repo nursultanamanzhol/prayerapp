@@ -56,7 +56,7 @@
 
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/firstStart"
                     android:layout_width="273dp"
                     android:layout_height="53dp"
                     android:layout_gravity="center"
