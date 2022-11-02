@@ -5,12 +5,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.prayer_app.R
+import com.example.prayer_app.R.layout.activity_main
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(activity_main)
 
 //        val btn = findViewById<Button>(R.id.firstStart)
 //        btn.setOnClickListener {

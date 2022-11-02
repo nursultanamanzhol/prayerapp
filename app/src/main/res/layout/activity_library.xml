@@ -26,7 +26,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="300dp"
+        android:layout_width="270dp"
 
         android:layout_height="wrap_content"
         android:background="@drawable/bg_rounded_all"
@@ -75,7 +75,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/mosque"
+                        android:src="@drawable/book1"
                         tools:ignore="ContentDescription" />
 
 
@@ -92,7 +92,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/mosque"
+                        android:src="@drawable/book2"
                         tools:ignore="ContentDescription" />
 
 
@@ -109,7 +109,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/mosque"
+                        android:src="@drawable/book3"
                         tools:ignore="ContentDescription" />
 
 
@@ -126,7 +126,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/mosque"
+                        android:src="@drawable/book4"
                         tools:ignore="ContentDescription" />
 
 
