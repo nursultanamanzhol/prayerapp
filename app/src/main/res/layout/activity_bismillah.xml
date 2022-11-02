@@ -1,71 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:gravity="center"
-    tools:context=".activities.bismillah_act">
-
-    <RelativeLayout
+    tools:context=".activities.BismillahActivity">
+    
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="UselessParent">
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rounded_all"
+
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/prayer_app"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ttext"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/todo"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/quran1" />
 
 
-        <FrameLayout
-            android:id="@+id/frameHeader"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/StartBismillah"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttons"
+            android:text="@string/bismillah"
+            android:textSize="30sp"
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@drawable/bg_rounded_all"
+            />
 
-                android:gravity="bottom"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginTop="20dp"
-                    android:text="@string/prayer_app"
-                    android:textColor="@android:color/holo_orange_light"
-                    android:textSize="60sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/ttext"
-                    android:layout_width="250dp"
-                    android:layout_height="250dp"
-                    android:layout_gravity="center"
-                    android:contentDescription="@string/todo"
-                    android:elevation="10dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/quran1" />
-
-
-                <Button
-                    android:id="@+id/StartBismillah"
-                    android:layout_width="280dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/buttons"
-                    android:layout_margin="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/bismillah"
-                    android:textSize="30sp"
-
-                    />
-            </LinearLayout>
-
-        </FrameLayout>
-
-
-
-    </RelativeLayout>
-</LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

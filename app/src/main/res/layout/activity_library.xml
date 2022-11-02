@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,55 +7,61 @@
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activities.library_act">
+    tools:context=".activities.LibraryActivity">
+
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="?actionBarSize"
         android:layout_height="?actionBarSize"
         android:layout_gravity="end"
-        android:layout_marginTop="-160dp"
-        android:layout_marginBottom="50dp"
-        app:navigationIcon="@drawable/ic_arrow_white" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:navigationIcon="@drawable/ic_arrow_white"
+        tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
 
-    <LinearLayout
-        android:layout_width="365dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
         android:background="@drawable/bg_rounded_all"
-
-        android:gravity="bottom"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="0dp"
-            android:text="Dini kitaphana"
-            android:textColor="@android:color/holo_orange_light"
-            android:textSize="40sp"
-
-            android:textStyle="bold" />
-
-    </LinearLayout>
+        android:text="@string/dini_kitaphana"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082"
+        tools:ignore="MissingConstraints" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
             tools:ignore="SpeakableTextPresentCheck">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="320dp"
                 android:orientation="horizontal">
-
 
 
                 <androidx.cardview.widget.CardView
@@ -130,4 +136,4 @@
             </LinearLayout>
         </HorizontalScrollView>
     </ScrollView>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">prayer-app</string>
+    <string name="app_name">Prayer-app</string>
     <string name="prayer_app">Prayer App</string>
     <string name="todo">TODO</string>
     <string name="quran">Quran</string>
@@ -7,5 +7,6 @@
     <string name="get_started">Get Started</string>
     <string name="namaz_times">Namaz times</string>
     <string name="zikir">Zikir</string>
+    <string name="dini_kitaphana">  Dini kitaphana</string>
 
 </resources>
