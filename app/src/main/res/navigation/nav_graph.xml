@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/bismillahActivity"
+        android:name="com.example.prayer_app.activities.BismillahActivity"
+        android:label="fragment_bismillah_activity"
+        tools:layout="@layout/fragment_bismillah_activity" >
+        <action
+            android:id="@+id/action_bismillahActivity_to_zikirActivity"
+            app:destination="@id/zikirActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/zikirActivity"
+        android:name="com.example.prayer_app.activities.ZikirActivity"
+        android:label="fragment_zikir_activity"
+        tools:layout="@layout/fragment_zikir_activity" />
+    <fragment
+        android:id="@+id/homeActivity"
+        android:name="com.example.prayer_app.activities.HomeActivity"
+        android:label="fragment_home_activity"
+        tools:layout="@layout/fragment_home_activity" >
+        <action
+            android:id="@+id/action_homeActivity_to_bismillahActivity"
+            app:destination="@id/bismillahActivity" />
+        <action
+            android:id="@+id/action_homeActivity_to_namazActivity"
+            app:destination="@id/namazActivity" />
+        <action
+            android:id="@+id/action_homeActivity_to_quranActivity"
+            app:destination="@id/quranActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.prayer_app.activities.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranActivity"
+        android:name="com.example.prayer_app.activities.QuranActivity"
+        android:label="fragment_quran_activity"
+        tools:layout="@layout/fragment_quran_activity" />
+    <fragment
+        android:id="@+id/libraryActivity"
+        android:name="com.example.prayer_app.activities.LibraryActivity"
+        android:label="fragment_library_activity"
+        tools:layout="@layout/fragment_library_activity" />
+    <fragment
+        android:id="@+id/namazActivity"
+        android:name="com.example.prayer_app.activities.NamazActivity"
+        android:label="fragment_namaz_activity"
+        tools:layout="@layout/fragment_namaz_activity" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.prayer_app.activities.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
