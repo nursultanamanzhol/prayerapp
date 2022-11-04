@@ -4,8 +4,10 @@ package com.example.prayer_app.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupActionBarWithNavController
 
 import com.example.prayer_app.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -13,6 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navController: NavController
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         NavigationUI.setupWithNavController(bottomNavigationView, navController)
 
+        setupActionBarWithNavController(navController)
 
 //        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 //        val cont = findNavController(R.id.fragmentContainerView)
@@ -37,5 +41,10 @@ class MainActivity : AppCompatActivity() {
 //
 //        bottomNavigationView.setupWithNavController(navController)
 
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val controller = findNavController(R.id.fragmentContainerView)
+        return controller.navigateUp() || super.onSupportNavigateUp()
     }
 }
