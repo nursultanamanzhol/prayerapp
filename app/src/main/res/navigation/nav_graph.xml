@@ -10,8 +10,8 @@
         android:label="fragment_bismillah_activity"
         tools:layout="@layout/fragment_bismillah_activity" >
         <action
-            android:id="@+id/action_bismillahActivity_to_zikirActivity"
-            app:destination="@id/zikirActivity" />
+            android:id="@+id/action_bismillahActivity_to_quranActivity"
+            app:destination="@id/quranActivity" />
     </fragment>
     <fragment
         android:id="@+id/zikirActivity"
@@ -30,8 +30,8 @@
             android:id="@+id/action_homeActivity_to_namazActivity"
             app:destination="@id/namazActivity" />
         <action
-            android:id="@+id/action_homeActivity_to_quranActivity"
-            app:destination="@id/quranActivity" />
+            android:id="@+id/action_homeActivity_to_zikirActivity"
+            app:destination="@id/zikirActivity" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"

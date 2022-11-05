@@ -31,20 +31,10 @@ class MainActivity : AppCompatActivity() {
 
         setupActionBarWithNavController(navController)
 
-//        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-//        val cont = findNavController(R.id.fragmentContainerView)
-//        val navigationView = findNavController(R.id.fragmentContainerView)
-
-//        val appBarConfiguration =
-//            AppBarConfiguration(setOf(R.id.mainFragment, R.id.libraryActivity, R.id.settings))
-//        setupActionBarWithNavController(navHostFragment, appBarConfiguration)
-//
-//        bottomNavigationView.setupWithNavController(navController)
-
     }
-
-    override fun onSupportNavigateUp(): Boolean {
-        val controller = findNavController(R.id.fragmentContainerView)
-        return controller.navigateUp() || super.onSupportNavigateUp()
-    }
+////Comment It is Button Back
+   override fun onSupportNavigateUp(): Boolean {
+       val controller = findNavController(R.id.fragmentContainerView)
+       return controller.navigateUp() || super.onSupportNavigateUp()
+   }
 }
