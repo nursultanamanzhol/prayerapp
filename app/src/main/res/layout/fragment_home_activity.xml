@@ -8,6 +8,15 @@
     android:gravity="center"
     tools:context=".activities.HomeActivity">
 
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottomNavigationView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:background="#fff"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:menu="@menu/bottom_menu" />-->
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -19,10 +28,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305"
+        app:layout_constraintVertical_bias="0.176"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -37,7 +46,7 @@
             android:src="@drawable/quranicon" />
 
         <Button
-            android:id="@+id/StartBismillah"
+            android:id="@+id/QuranBtn"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_gravity="center"
@@ -60,10 +69,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintHorizontal_bias="0.847"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305"
+        app:layout_constraintVertical_bias="0.174"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -121,14 +130,14 @@
             tools:ignore="ImageContrastCheck" />
 
         <Button
-            android:id="@+id/Namaz"
+            android:id="@+id/Zikir"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_margin="1dp"
             android:layout_marginBottom="1dp"
             android:background="@drawable/buttons"
-            android:text="Namaz"
+            android:text="ZIKIR"
             android:textColor="#EFEEED"
             android:textSize="12sp"
             tools:ignore="TextContrastCheck" />

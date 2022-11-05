@@ -9,6 +9,8 @@
     tools:context=".activities.NamazActivity">
 
 
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layoutToolBar"
         android:layout_width="match_parent"
