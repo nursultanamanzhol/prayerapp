@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Prayerapp" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#FFF17A0A</item>
+        <item name="colorPrimary">#F17A0A</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->

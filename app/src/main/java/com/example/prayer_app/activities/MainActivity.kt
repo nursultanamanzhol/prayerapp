@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.prayer_app.R
+import com.google.android.material.appbar.MaterialToolbar
 
 
 //import com.example.prayer_app.R.layout.activity_main
@@ -21,7 +22,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class MainActivity : AppCompatActivity() {
 //    private Toolbar mToolbar;
     private lateinit var navController: NavController
-
+    lateinit var topAppBar : MaterialToolbar
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {

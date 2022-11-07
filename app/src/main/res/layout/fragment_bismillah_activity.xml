@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.BismillahActivity"
     android:fitsSystemWindows="true"
-    android:background="@drawable/frame"
-    android:backgroundTint="@android:color/holo_orange_dark"
+
 
     >
 

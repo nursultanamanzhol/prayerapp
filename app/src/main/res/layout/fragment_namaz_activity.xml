@@ -27,6 +27,7 @@
 <!--        app:layout_constraintVertical_bias="0.0"-->
 <!--        tools:ignore="MissingConstraints"/>-->
 
+
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
@@ -37,8 +38,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints">
 
 
@@ -68,16 +71,12 @@
             tools:srcCompat="@drawable/prayer" />
 
 
-
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvBacaanShalat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp" />
     </LinearLayout>
-
-
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="wrap_content"
