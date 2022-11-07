@@ -19,10 +19,11 @@ class HomeActivity : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home_activity, container, false)
-        val QuranBtn: Button = view.findViewById(R.id.QuranBtn)
+        val quranBtn: Button = view.findViewById(R.id.QuranBtn)
         val tarih: Button = view.findViewById(R.id.Tarih)
-//        val zikir: Button = view.findViewById(R.id.Zikir)
-        QuranBtn.setOnClickListener{
+        val zikir: Button = view.findViewById(R.id.Zikir)
+        val qosymsha: Button = view.findViewById(R.id.Qosymsha)
+        quranBtn.setOnClickListener{
             val fragment = BismillahActivity()// nevigate to second
             val transaction = fragmentManager?.beginTransaction()
             transaction?.replace(R.id.fragmentContainerView, fragment)?.commit()
@@ -32,11 +33,16 @@ class HomeActivity : Fragment() {
             val transaction = fragmentManager?.beginTransaction()
             transaction?.replace(R.id.fragmentContainerView, fragment)?.commit()
         }
-//        zikir.setOnClickListener{
-//            val fragment = ZikirActivity()// nevigate to second
-//            val transaction = fragmentManager?.beginTransaction()
-//            transaction?.replace(R.id.fragmentContainerView, fragment)?.commit()
-//        }
+        zikir.setOnClickListener{
+            val fragment = ZikirActivity()// nevigate to second
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fragmentContainerView, fragment)?.commit()
+        }
+        qosymsha.setOnClickListener{
+            val fragment = ZikirActivity()// nevigate to second
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fragmentContainerView, fragment)?.commit()
+        }
         return view
     }
 

@@ -12,12 +12,14 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
-
 import com.example.prayer_app.R
+
+
+//import com.example.prayer_app.R.layout.activity_main
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-
+//    private Toolbar mToolbar;
     private lateinit var navController: NavController
 
 
@@ -26,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+//        mToolbar = findViewById<>()
 //        val secondActbutton = findViewById<Button>(R.id.GetStart)
 //        secondActbutton.setOnClickListener {
 //            val Intent = Intent(this, HomeActivity::class.java)
