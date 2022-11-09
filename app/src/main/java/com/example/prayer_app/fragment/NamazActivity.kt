@@ -5,9 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.example.prayer_app.R
-import com.example.prayer_app.data.Datasource
 
 
 class NamazActivity : Fragment() {
@@ -22,9 +20,9 @@ class NamazActivity : Fragment() {
 
 
     }
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-
-    }
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//
+//
+//    }
 }
