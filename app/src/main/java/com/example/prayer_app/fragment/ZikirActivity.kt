@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.prayer_app.R
 import com.example.prayer_app.ZikirActivityViewModel
@@ -32,14 +33,20 @@ class ZikirActivity : Fragment() {
 
         val zkCount: Text = view.findViewById(R.id.zkCount)
         val btnCount: Button = view.findViewById(R.id.btnCount)
-        zkCount.text=countZ.toString()
+       // zkCount.text= countZ.toString()
+     //   zkCount.text = viewModel.countZ.toString()
 
         btnCount.setOnClickListener{
-            ++countZ
+           // ++countZ
+         //   zkCount.text= countZ.toString()
+            viewModel.updateCountZ()
+          //  zkCount= viewModel.countZ.toString()
+            viewModel.countZ.observe(viewLifecycleOwner, Observer{
+                zkCount.text = it.toString()
+            })
+
             println("clicked button 2")
             Toast.makeText(view?.context, "Button Clicked", Toast.LENGTH_LONG).show()
-            zkCount.text=countZ.toString()
-
         }
         //hw8
         return view
