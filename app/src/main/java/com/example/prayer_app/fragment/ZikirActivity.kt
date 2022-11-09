@@ -32,23 +32,18 @@ class ZikirActivity : Fragment() {
 
         viewModel = ViewModelProvider(this).get(ZikirActivityViewModel::class.java)
 
-        // zkCount.text= countZ.toString()
-        //   zkCount.text = viewModel.countZ.toString()
         viewModel.countZ.observe(viewLifecycleOwner, Observer {
             binding.zkCount.text = it.toString()
         })
         binding.btnCount.setOnClickListener {
-            // ++countZ
-            //   zkCount.text= countZ.toString()
-            //  zkCount= viewModel.countZ.toString()
+
             viewModel.updateCountZ()
 
             println("clicked button 1")
             Toast.makeText(view?.context, "Button Clicked", Toast.LENGTH_LONG).show()
         }
-        //hw8
+
         return binding.root
-        //  return inflater.inflate(R.layout.fragment_zikir_activity, container, false)
     }
 
 
