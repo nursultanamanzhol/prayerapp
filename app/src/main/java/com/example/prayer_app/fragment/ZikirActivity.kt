@@ -43,6 +43,8 @@ class ZikirActivity : Fragment() {
             Toast.makeText(view?.context, "Button Clicked", Toast.LENGTH_LONG).show()
         }
 
+
+
         return binding.root
     }
 
