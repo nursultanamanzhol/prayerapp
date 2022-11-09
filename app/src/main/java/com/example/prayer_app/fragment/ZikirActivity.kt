@@ -11,14 +11,15 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.prayer_app.R
 import com.example.prayer_app.ZikirActivityViewModel
+import com.example.prayer_app.databinding.FragmentZikirActivityBinding
 import org.w3c.dom.Text
 
 
-
 class ZikirActivity : Fragment() {
-     var countZ=0
-    private lateinit var viewModel:ZikirActivityViewModel
+    var countZ = 0
+    private lateinit var viewModel: ZikirActivityViewModel
 
+    private lateinit var binding: FragmentZikirActivityBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,32 +28,28 @@ class ZikirActivity : Fragment() {
         // Inflate the layout for this fragment
 
         // hw8
-        val view = inflater.inflate(R.layout.fragment_zikir_activity, container, false)
+        binding = FragmentZikirActivityBinding.inflate(inflater,container, false)
 
         viewModel = ViewModelProvider(this).get(ZikirActivityViewModel::class.java)
 
-        val zkCount: Text = view.findViewById(R.id.zkCount)
-        val btnCount: Button = view.findViewById(R.id.btnCount)
-       // zkCount.text= countZ.toString()
-     //   zkCount.text = viewModel.countZ.toString()
-
-        btnCount.setOnClickListener{
-           // ++countZ
-         //   zkCount.text= countZ.toString()
+        // zkCount.text= countZ.toString()
+        //   zkCount.text = viewModel.countZ.toString()
+        viewModel.countZ.observe(viewLifecycleOwner, Observer {
+            binding.zkCount.text = it.toString()
+        })
+        binding.btnCount.setOnClickListener {
+            // ++countZ
+            //   zkCount.text= countZ.toString()
+            //  zkCount= viewModel.countZ.toString()
             viewModel.updateCountZ()
-          //  zkCount= viewModel.countZ.toString()
-            viewModel.countZ.observe(viewLifecycleOwner, Observer{
-                zkCount.text = it.toString()
-            })
 
-            println("clicked button 2")
+            println("clicked button 1")
             Toast.makeText(view?.context, "Button Clicked", Toast.LENGTH_LONG).show()
         }
         //hw8
-        return view
-      //  return inflater.inflate(R.layout.fragment_zikir_activity, container, false)
+        return binding.root
+        //  return inflater.inflate(R.layout.fragment_zikir_activity, container, false)
     }
-
 
 
 }

@@ -5,11 +5,7 @@ import androidx.lifecycle.ViewModel
 
 class ZikirActivityViewModel: ViewModel() {
     //var countZ =0
-    var countZ = MutableLiveData<Int>()
-
-    init{
-        countZ.value =0
-    }
+    var countZ = MutableLiveData(0)
 
     fun updateCountZ(){
      //   ++countZ
