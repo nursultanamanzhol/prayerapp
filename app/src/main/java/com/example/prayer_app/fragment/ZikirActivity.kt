@@ -7,13 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import com.example.prayer_app.R
+import com.example.prayer_app.ZikirActivityViewModel
 import org.w3c.dom.Text
 
 
 
 class ZikirActivity : Fragment() {
-    var countZ=0
+     var countZ=0
+    private lateinit var viewModel:ZikirActivityViewModel
 
 
     override fun onCreateView(
@@ -24,7 +27,10 @@ class ZikirActivity : Fragment() {
 
         // hw8
         val view = inflater.inflate(R.layout.fragment_zikir_activity, container, false)
-        var zkCount: Text = view.findViewById(R.id.zkCount)
+
+        viewModel = ViewModelProvider(this).get(ZikirActivityViewModel::class.java)
+
+        val zkCount: Text = view.findViewById(R.id.zkCount)
         val btnCount: Button = view.findViewById(R.id.btnCount)
         zkCount.text=countZ.toString()
 
