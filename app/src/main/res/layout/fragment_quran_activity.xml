@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,11 +7,11 @@
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:orientation="horizontal"
-    tools:context=".activities.">
+    tools:context=".fragment.QuranActivity">
 
 
     <LinearLayout
-        android:id="@+id/linearLayout7"
+        android:id="@+id/QuranLinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
@@ -52,13 +52,13 @@
             android:layout_gravity="center"
             android:layout_marginBottom="30dp"
             android:text="@string/quran"
-            android:textColor="@color/material_dynamic_neutral_variant10"
+
             android:textSize="35sp"
             android:textStyle="bold" />
 
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvBacaanShalat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -71,17 +71,17 @@
         app:layout_constraintVertical_bias="0.834"
         tools:ignore="MissingConstraints" />
 
-<!--    <com.google.android.material.appbar.AppBarLayout-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:background="@android:color/background_dark"-->
-<!--        android:elevation="0dp"-->
-<!--        app:elevation="0dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@android:color/background_dark"-->
+    <!--        android:elevation="0dp"-->
+    <!--        app:elevation="0dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
 
-<!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

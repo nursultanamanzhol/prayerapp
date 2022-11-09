@@ -1,70 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="380dp"
-    android:layout_gravity="center"
-    android:layout_height="590dp"
-    android:background="@drawable/mainbg"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    tools:context=".activities.MainActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MainActivity">
 
-
-    <LinearLayout
-        android:layout_width="327dp"
-        android:layout_height="543dp"
-        android:layout_gravity="center"
-        android:background="@drawable/bg_rounded_all"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:text="@string/prayer_app"
-            android:textColor="?android:attr/colorActivatedHighlight"
-            android:textSize="50sp"
-            android:textStyle="bold" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="300dp"
-            app:cardElevation="0dp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/mosque"
-                tools:ignore="ContentDescription" />
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/main_menu"
+            app:navigationIcon="@drawable/kaaaaaba"
+            app:title="الله"
+            app:titleTextColor="@color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
 
 
-        </androidx.cardview.widget.CardView>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
 
 
-        <Button
-            android:id="@+id/firstStart"
-            android:layout_width="273dp"
-            android:layout_height="53dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="40dp"
-            android:background="@drawable/buttons"
-            android:text="@string/get_started"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
+        android:layout_marginBottom="1dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:navGraph="@navigation/nav_graph" />
 
 
-    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
