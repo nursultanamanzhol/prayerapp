@@ -1,4 +1,4 @@
-package com.example.prayer_app.activities
+package com.example.prayer_app.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.prayer_app.R
 
 
-class QuranActivity : Fragment() {
+class Settings : Fragment() {
 
 
     override fun onCreateView(
@@ -16,6 +16,8 @@ class QuranActivity : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_quran_activity, container, false)
+        return inflater.inflate(R.layout.fragment_settings, container, false)
     }
+
+
 }

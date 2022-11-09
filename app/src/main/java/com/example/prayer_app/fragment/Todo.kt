@@ -1,4 +1,4 @@
-package com.example.prayer_app.activities
+package com.example.prayer_app.fragment
 
 data class Todo (
     val title: String,

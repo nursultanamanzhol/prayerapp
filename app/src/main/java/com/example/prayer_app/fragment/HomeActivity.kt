@@ -1,4 +1,4 @@
-package com.example.prayer_app.activities
+package com.example.prayer_app.fragment
 
 //import android.os.Build.VERSION_CODES.
 import android.os.Bundle

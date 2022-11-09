@@ -1,4 +1,4 @@
-package com.example.prayer_app.activities
+package com.example.prayer_app.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

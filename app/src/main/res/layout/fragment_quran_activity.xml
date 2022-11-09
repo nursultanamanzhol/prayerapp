@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:orientation="horizontal"
-    tools:context=".activities.QuranActivity">
+    tools:context=".fragment.QuranActivity">
 
 
     <LinearLayout

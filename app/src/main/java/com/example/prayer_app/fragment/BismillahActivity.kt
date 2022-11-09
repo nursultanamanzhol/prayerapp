@@ -1,4 +1,4 @@
-package com.example.prayer_app.activities
+package com.example.prayer_app.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +9,7 @@ import android.widget.Button
 import com.example.prayer_app.R
 
 
-class MainFragment : Fragment() {
+class BismillahActivity : Fragment() {
 
 
     override fun onCreateView(
@@ -17,18 +17,14 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_main, container, false)
-
-        val view = inflater.inflate(R.layout.fragment_main, container, false)
-        val nextBtn: Button = view.findViewById(R.id.GetStart)
+        val view = inflater.inflate(R.layout.fragment_bismillah_activity, container, false)
+        val nextBtn: Button = view.findViewById(R.id.StartBismillah)
         nextBtn.setOnClickListener{
-            val fragment = HomeActivity()// nevigate to second
+            val fragment = QuranActivity()// nevigate to second
             val transaction = fragmentManager?.beginTransaction()
             transaction?.replace(R.id.fragmentContainerView, fragment)?.commit()
         }
         return view
-
-
     }
 
 
