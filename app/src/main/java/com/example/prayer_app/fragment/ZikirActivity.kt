@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import com.example.prayer_app.R
 import com.example.prayer_app.ZikirActivityViewModel
 import com.example.prayer_app.databinding.FragmentZikirActivityBinding
@@ -30,6 +31,11 @@ class ZikirActivity : Fragment() {
         // hw8
         binding = FragmentZikirActivityBinding.inflate(inflater,container, false)
 
+        binding.backZikir.setOnClickListener {
+            Navigation.findNavController(binding.root)
+                .navigate(R.id.action_zikirActivity_to_homeActivity)
+        }
+
         viewModel = ViewModelProvider(this).get(ZikirActivityViewModel::class.java)
 
         viewModel.countZ.observe(viewLifecycleOwner, Observer {
@@ -41,6 +47,13 @@ class ZikirActivity : Fragment() {
 
             println("clicked button 1")
             Toast.makeText(view?.context, "Button Clicked", Toast.LENGTH_LONG).show()
+        }
+        binding.restart.setOnClickListener {
+
+            viewModel.restartCountZ()
+
+            println("clicked button 1")
+            Toast.makeText(view?.context, "restart Clicked", Toast.LENGTH_LONG).show()
         }
 
 

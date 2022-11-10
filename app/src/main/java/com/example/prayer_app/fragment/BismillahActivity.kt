@@ -6,26 +6,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.Navigation
 import com.example.prayer_app.R
+import com.example.prayer_app.databinding.FragmentBismillahActivityBinding
 
 
 class BismillahActivity : Fragment() {
 
+    private lateinit var binding: FragmentBismillahActivityBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_bismillah_activity, container, false)
-        val nextBtn: Button = view.findViewById(R.id.StartBismillah)
-        nextBtn.setOnClickListener{
-            val fragment = QuranActivity()// nevigate to second
-            val transaction = fragmentManager?.beginTransaction()
-            transaction?.replace(R.id.fragmentContainerView, fragment)?.commit()
+        binding = FragmentBismillahActivityBinding.inflate(inflater, container, false)
+        binding.StartBismillah.setOnClickListener {
+            Navigation.findNavController(binding.root)
+                .navigate(R.id.action_bismillahActivity_to_quranActivity)
         }
-        return view
+        return binding.root
     }
-
 
 }

@@ -9,7 +9,21 @@
     android:orientation="vertical"
     tools:context=".fragment.LibraryActivity">
 
-
+    <ImageView
+        android:id="@+id/backLibrary"
+        android:layout_width="45dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/todo"
+        android:elevation="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953" />
     <!--    <androidx.appcompat.widget.Toolbar-->
     <!--        android:id="@+id/toolbar"-->
     <!--        android:layout_width="?actionBarSize"-->

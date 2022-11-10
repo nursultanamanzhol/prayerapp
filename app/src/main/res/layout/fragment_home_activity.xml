@@ -19,6 +19,89 @@
 <!--        app:menu="@menu/bottom_menu" />-->
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="150dp"
+        android:layout_height="136dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/homebg"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64">
+
+        <ImageView
+            android:id="@+id/qosymsha"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/todo"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/qosymsha"
+            tools:ignore="ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/Qosymsha"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/buttons"
+            android:text="Qosymsha"
+            android:textColor="#EFEEED"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="150dp"
+        android:layout_height="136dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/homebg"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ttext"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/todo"
+            android:elevation="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zikir"
+            tools:ignore="ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/Zikir"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/buttons"
+            android:text="ZIKIR"
+            android:textColor="#EFEEED"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="150dp"
         android:layout_height="136dp"
@@ -28,10 +111,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176"
+        app:layout_constraintVertical_bias="0.258"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -69,10 +152,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.174"
+        app:layout_constraintVertical_bias="0.256"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -88,7 +171,7 @@
             tools:ignore="ImageContrastCheck" />
 
         <Button
-            android:id="@+id/Tarih"
+            android:id="@+id/LibraryBtn"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_gravity="center"
@@ -96,89 +179,6 @@
             android:layout_marginBottom="1dp"
             android:background="@drawable/buttons"
             android:text="Tarih"
-            android:textColor="#EFEEED"
-            android:textSize="12sp"
-            tools:ignore="TextContrastCheck" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="150dp"
-        android:layout_height="136dp"
-        android:layout_gravity="bottom"
-        android:background="@drawable/homebg"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/ttext"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:contentDescription="@string/todo"
-            android:elevation="10dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/zikir"
-            tools:ignore="ImageContrastCheck" />
-
-        <Button
-            android:id="@+id/Zikir"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_margin="1dp"
-            android:layout_marginBottom="1dp"
-            android:background="@drawable/buttons"
-            android:text="ZIKIR"
-            android:textColor="#EFEEED"
-            android:textSize="12sp"
-            tools:ignore="TextContrastCheck" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="150dp"
-        android:layout_height="136dp"
-        android:layout_gravity="bottom"
-        android:background="@drawable/homebg"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559">
-
-        <ImageView
-            android:id="@+id/qosymsha"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:contentDescription="@string/todo"
-            android:elevation="10dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/qosymsha"
-            tools:ignore="ImageContrastCheck" />
-
-        <Button
-            android:id="@+id/Qosymsha"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_margin="1dp"
-            android:layout_marginBottom="1dp"
-            android:background="@drawable/buttons"
-            android:text="Qosymsha"
             android:textColor="#EFEEED"
             android:textSize="12sp"
             tools:ignore="TextContrastCheck" />

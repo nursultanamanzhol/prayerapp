@@ -26,12 +26,6 @@ public class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        mToolbar = findViewById<>()
-//        val secondActbutton = findViewById<Button>(R.id.GetStart)
-//        secondActbutton.setOnClickListener {
-//            val Intent = Intent(this, HomeActivity::class.java)
-//            startActivity(Intent)
-//        }
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment

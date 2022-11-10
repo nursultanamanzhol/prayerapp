@@ -12,4 +12,10 @@ class ZikirActivityViewModel: ViewModel() {
         countZ.value = (countZ.value)?.plus(1)
 
     }
+
+    fun restartCountZ(){
+        //   ++countZ
+        countZ.value = 0
+
+    }
 }
