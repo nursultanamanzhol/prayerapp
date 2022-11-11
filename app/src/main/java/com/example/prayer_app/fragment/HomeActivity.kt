@@ -1,16 +1,13 @@
 package com.example.prayer_app.fragment
 
-//import android.os.Build.VERSION_CODES.
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.navigation.Navigation
 import com.example.prayer_app.R
 import com.example.prayer_app.databinding.FragmentHomeActivityBinding
-import com.example.prayer_app.databinding.FragmentMainBinding
 
 
 class HomeActivity : Fragment() {
@@ -20,7 +17,8 @@ class HomeActivity : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View{
+//        View?
         // Inflate the layout for this fragment
         binding = FragmentHomeActivityBinding.inflate(inflater, container, false)
         binding.QuranBtn.setOnClickListener {
@@ -31,11 +29,29 @@ class HomeActivity : Fragment() {
             Navigation.findNavController(binding.root)
                 .navigate(R.id.action_homeActivity_to_zikirActivity)
         }
-
         binding.LibraryBtn.setOnClickListener {
             Navigation.findNavController(binding.root)
                 .navigate(R.id.action_homeActivity_to_libraryActivity)
         }
+        return binding.root
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //        binding.taryh.setOnClickListener {
 //            Navigation.findNavController(binding.root)
@@ -66,8 +82,3 @@ class HomeActivity : Fragment() {
 //            val transaction = fragmentManager?.beginTransaction()
 //            transaction?.replace(R.id.fragmentContainerView, fragment)?.commit()
 //        }
-        return binding.root
-    }
-
-
-}

@@ -9,7 +9,6 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.prayer_app.R
 import com.example.prayer_app.adapter.UserAdapter
-import com.example.prayer_app.databinding.ActivityMainBinding
 import com.example.prayer_app.databinding.FragmentQuranActivityBinding
 import com.example.prayer_app.model.UserModel
 
@@ -17,14 +16,13 @@ import com.example.prayer_app.model.UserModel
 class QuranActivity : Fragment() {
 
     private lateinit var binding: FragmentQuranActivityBinding
-    lateinit var adapter: UserAdapter
+    private lateinit var adapter: UserAdapter
     lateinit var recyclerView: RecyclerView
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         binding = FragmentQuranActivityBinding.inflate(inflater, container, false)
         binding.backQuran.setOnClickListener {
@@ -33,7 +31,6 @@ class QuranActivity : Fragment() {
         }
         initial()
         return binding.root
-
 
     }
 
@@ -95,7 +92,7 @@ class QuranActivity : Fragment() {
             "Кафирун сүресі", "Бисмилләәһир-рахмаанир-рахиим\n" +
                     "«Қул иәә әииуһәл кәфируун, ләә ә’буду мә тә’будун, уәләә әнтум ’абидуна мәә а’буд, уа ләә әнә ’абидум мә’бәдтум, уә ләә әнтум ’абидуна мәә а’буд, ләкум диинукум уәлиадин»"
         )
-        userList.add(user7)
+        userList.add(user8)
 
         val user9 = UserModel(
             "Насыр сүресі", "Бисмилләәһир-рахмаанир-рахиим\n" +

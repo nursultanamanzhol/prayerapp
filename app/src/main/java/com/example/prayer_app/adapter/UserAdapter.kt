@@ -1,12 +1,9 @@
 package com.example.prayer_app.adapter
 
 import android.annotation.SuppressLint
-import android.graphics.ColorSpace.Model
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.prayer_app.R
 import com.example.prayer_app.databinding.ItemUserLayoutBinding
 import com.example.prayer_app.model.UserModel
 

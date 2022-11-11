@@ -5,11 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.navigation.Navigation
 import com.example.prayer_app.R
 import com.example.prayer_app.databinding.FragmentMainBinding
-import com.example.prayer_app.databinding.FragmentZikirActivityBinding
+
 
 
 class MainFragment : Fragment() {
@@ -20,7 +19,7 @@ class MainFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         binding = FragmentMainBinding.inflate(inflater, container, false)
 

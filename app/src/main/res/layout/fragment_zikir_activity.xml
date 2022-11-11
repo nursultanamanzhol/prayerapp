@@ -4,24 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:fitsSystemWindows="true"
     tools:context=".fragment.ZikirActivity"
     >
 
-    <!--    <androidx.appcompat.widget.Toolbar-->
-<!--        android:id="@+id/back"-->
-<!--        android:layout_width="?actionBarSize"-->
-<!--        android:layout_height="?actionBarSize"-->
-<!--        android:layout_gravity="start"-->
-
-
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.047"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.026"-->
-<!--        app:navigationIcon="@drawable/ic_arrow_white" />-->
 
     <ImageView
         android:id="@+id/backZikir"
@@ -34,17 +21,17 @@
         android:src="@drawable/ic_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintVertical_bias="0.039" />
 
     <TextView
         android:id="@+id/zkCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/holo_orange_light"
-        android:textSize="110sp"
+        android:textSize="90sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,6 +65,7 @@
 
 
         <TextView
+            android:id="@+id/zkName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

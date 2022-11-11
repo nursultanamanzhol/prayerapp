@@ -13,8 +13,7 @@ import com.google.android.material.appbar.MaterialToolbar
 
 //import com.example.prayer_app.R.layout.activity_main
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
-public class MainActivity : AppCompatActivity() {
+ class MainActivity : AppCompatActivity() {
 
 
     //    private Toolbar mToolbar;
