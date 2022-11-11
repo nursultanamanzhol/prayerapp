@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2405" />
+        <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/drawable/baseline_delete_24.xml" value="0.1" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/drawable/baseline_menu.xml" value="0.1145" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/drawable/bg_rounded_all.xml" value="0.2405" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/drawable/bgrow.xml" value="0.2405" />
@@ -25,15 +26,17 @@
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/activity_library.xml" value="0.25" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/activity_namaz_acitivity.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/activity_todo.xml" value="0.264" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/activity_zikircount.xml" value="0.2" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/fragment_bismillah_activity.xml" value="0.16" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/fragment_home_activity.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/fragment_library_activity.xml" value="0.152" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/fragment_main.xml" value="0.1703125" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/fragment_namaz_activity.xml" value="0.1" />
-        <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/fragment_quran_activity.xml" value="0.2" />
+        <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/fragment_quran_activity.xml" value="0.25" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/fragment_zikir_activity.xml" value="0.14417989417989419" />
+        <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/item.xml" value="0.4" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/item_todo.xml" value="0.1703125" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/item_user_layout.xml" value="0.1703125" />
         <entry key="..\:/Users/LEGION/AndroidStudioProjects/prayerapp/app/src/main/res/layout/list_settings.xml" value="0.20969202898550723" />
