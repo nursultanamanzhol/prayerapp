@@ -37,8 +37,8 @@
             android:id="@+id/action_homeActivity_to_zikirActivity"
             app:destination="@id/zikirActivity" />
         <action
-            android:id="@+id/action_homeActivity_to_libraryActivity"
-            app:destination="@id/libraryActivity" />
+            android:id="@+id/action_homeActivity_to_historyFragment"
+            app:destination="@id/historyFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
@@ -77,4 +77,9 @@
         android:name="com.example.prayer_app.fragment.Settings"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.prayer_app.fragment.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
 </navigation>

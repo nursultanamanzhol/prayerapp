@@ -32,9 +32,9 @@ class HomeActivity : Fragment() {
                 .navigate(R.id.action_homeActivity_to_zikirActivity)
         }
 
-        binding.LibraryBtn.setOnClickListener {
+        binding.TatihBtn.setOnClickListener {
             Navigation.findNavController(binding.root)
-                .navigate(R.id.action_homeActivity_to_libraryActivity)
+                .navigate(R.id.action_homeActivity_to_historyFragment)
         }
 
 //        binding.taryh.setOnClickListener {

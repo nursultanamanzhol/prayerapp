@@ -171,7 +171,7 @@
             tools:ignore="ImageContrastCheck" />
 
         <Button
-            android:id="@+id/LibraryBtn"
+            android:id="@+id/TatihBtn"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_gravity="center"
