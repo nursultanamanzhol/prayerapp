@@ -1,4 +1,4 @@
-package com.example.prayer_app
+package com.example.prayer_app.viewModal
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

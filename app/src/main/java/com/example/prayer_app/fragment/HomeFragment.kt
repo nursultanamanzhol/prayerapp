@@ -6,14 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.navigation.Navigation
 import com.example.prayer_app.R
 import com.example.prayer_app.databinding.FragmentHomeActivityBinding
-import com.example.prayer_app.databinding.FragmentMainBinding
 
 
-class HomeActivity : Fragment() {
+class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeActivityBinding
 

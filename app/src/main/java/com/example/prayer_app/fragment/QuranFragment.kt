@@ -9,12 +9,11 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.prayer_app.R
 import com.example.prayer_app.adapter.UserAdapter
-import com.example.prayer_app.databinding.ActivityMainBinding
 import com.example.prayer_app.databinding.FragmentQuranActivityBinding
 import com.example.prayer_app.model.UserModel
 
 
-class QuranActivity : Fragment() {
+class QuranFragment : Fragment() {
 
     private lateinit var binding: FragmentQuranActivityBinding
     lateinit var adapter: UserAdapter
