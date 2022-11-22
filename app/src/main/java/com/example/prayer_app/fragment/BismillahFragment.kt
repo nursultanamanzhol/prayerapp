@@ -7,24 +7,22 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.example.prayer_app.R
-import com.example.prayer_app.databinding.FragmentLibraryActivityBinding
+import com.example.prayer_app.databinding.FragmentBismillahActivityBinding
 
 
-class LibraryActivity : Fragment() {
+class BismillahFragment : Fragment() {
 
-    private lateinit var binding: FragmentLibraryActivityBinding
+    private lateinit var binding: FragmentBismillahActivityBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding =  FragmentLibraryActivityBinding.inflate(inflater, container, false)
-        binding.backLibrary.setOnClickListener {
+        binding = FragmentBismillahActivityBinding.inflate(inflater, container, false)
+        binding.StartBismillah.setOnClickListener {
             Navigation.findNavController(binding.root)
-                .navigate(R.id.action_libraryActivity_to_homeActivity)
-
-
+                .navigate(R.id.action_bismillahActivity_to_quranActivity)
         }
         return binding.root
     }

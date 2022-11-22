@@ -29,7 +29,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@drawable/bg_rounded_all"
         android:gravity="center"
@@ -68,32 +68,10 @@
             android:textColor="#FF8800"
             android:textSize="30sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/ttext"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/ttext"
-            android:layout_width="173dp"
-            android:layout_height="156dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="118dp"
-            android:layout_marginTop="29dp"
-            android:layout_marginEnd="118dp"
-            android:layout_marginBottom="60dp"
-            android:background="@drawable/buttons"
-            android:contentDescription="@string/todo"
-            android:elevation="5dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/prayer"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            tools:srcCompat="@drawable/prayer" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -106,6 +84,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
         tools:ignore="MissingConstraints" />

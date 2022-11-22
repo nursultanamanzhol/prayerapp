@@ -6,7 +6,7 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/bismillahActivity"
-        android:name="com.example.prayer_app.fragment.BismillahActivity"
+        android:name="com.example.prayer_app.fragment.BismillahFragment"
         android:label="fragment_bismillah_activity"
         tools:layout="@layout/fragment_bismillah_activity" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/zikirActivity"
-        android:name="com.example.prayer_app.fragment.ZikirActivity"
+        android:name="com.example.prayer_app.fragment.ZikirFragment"
         android:label="fragment_zikir_activity"
         tools:layout="@layout/fragment_zikir_activity" >
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeActivity"
-        android:name="com.example.prayer_app.fragment.HomeActivity"
+        android:name="com.example.prayer_app.fragment.HomeFragment"
         android:label="fragment_home_activity"
         tools:layout="@layout/fragment_home_activity" >
         <action
@@ -51,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/quranActivity"
-        android:name="com.example.prayer_app.fragment.QuranActivity"
+        android:name="com.example.prayer_app.fragment.QuranFragment"
         android:label="fragment_quran_activity"
         tools:layout="@layout/fragment_quran_activity" >
         <action
@@ -60,7 +60,7 @@
     </fragment>
     <fragment
         android:id="@+id/libraryActivity"
-        android:name="com.example.prayer_app.fragment.LibraryActivity"
+        android:name="com.example.prayer_app.fragment.LibraryFragment"
         android:label="fragment_library_activity"
         tools:layout="@layout/fragment_library_activity" >
         <action
@@ -69,17 +69,24 @@
     </fragment>
     <fragment
         android:id="@+id/namazActivity"
-        android:name="com.example.prayer_app.fragment.NamazActivity"
+        android:name="com.example.prayer_app.fragment.NamazFragment"
         android:label="fragment_namaz_activity"
-        tools:layout="@layout/fragment_namaz_activity" />
-    <fragment
-        android:id="@+id/settings"
-        android:name="com.example.prayer_app.fragment.Settings"
-        android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_namaz_activity" >
+        <action
+            android:id="@+id/action_namazActivity_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.example.prayer_app.fragment.HistoryFragment"
         android:label="fragment_history"
-        tools:layout="@layout/fragment_history" />
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/toDoListFragment"
+        android:name="com.example.prayer_app.fragment.ToDoListFragment"
+        android:label="ToDoListFragment" />
 </navigation>

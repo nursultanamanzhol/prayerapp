@@ -1,4 +1,4 @@
-package com.example.prayer_app.fragment
+package com.example.prayer_app.viewModal
 
 import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.RecyclerView
