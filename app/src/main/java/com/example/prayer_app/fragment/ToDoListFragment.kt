@@ -54,7 +54,7 @@ class ToDoListFragment : Fragment() {
 
     @SuppressLint("FragmentLiveDataObserve")
     fun observeData() {
-        viewModel.lst.observe(this, Observer {
+        viewModel.lst.observe(viewLifecycleOwner, Observer {
             Log.i("data", it.toString())
             mainrecycler.adapter = RecyclerAdapter(viewModel, it, this)
         })

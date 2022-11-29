@@ -36,11 +36,6 @@ class RecyclerAdapter(val viewModel: ToDoListViewModel, val arrayList: ArrayList
     }
 
     override fun getItemCount(): Int {
-        if(arrayList.size==0){
-//            Toast.makeText(context,"List is empty",Toast.LENGTH_LONG).show()
-        }else{
-
-        }
         return arrayList.size
     }
 

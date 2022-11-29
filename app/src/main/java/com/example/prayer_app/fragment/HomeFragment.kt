@@ -1,15 +1,17 @@
 package com.example.prayer_app.fragment
 
 //import android.os.Build.VERSION_CODES.
+//import android.app.Fragment
+import android.os.Build.VERSION_CODES.R
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+//import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.example.prayer_app.R
 import com.example.prayer_app.databinding.FragmentHomeActivityBinding
-
+import androidx.fragment.app.Fragment
 
 class HomeFragment : Fragment() {
 
@@ -21,23 +23,23 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentHomeActivityBinding.inflate(inflater, container, false)
-        binding.QuranBtn.setOnClickListener {
-            Navigation.findNavController(binding.root)
-                .navigate(R.id.action_homeActivity_to_bismillahActivity)
-        }
-        binding.Zikir.setOnClickListener {
-            Navigation.findNavController(binding.root)
-                .navigate(R.id.action_homeActivity_to_zikirActivity)
-        }
-
-        binding.TatihBtn.setOnClickListener {
-            Navigation.findNavController(binding.root)
-                .navigate(R.id.action_homeActivity_to_historyFragment)
-        }
-
-//        binding.taryh.setOnClickListener {
+//        binding.QuranBtn.setOnClickListener {
 //            Navigation.findNavController(binding.root)
-//                .navigate(R.id.action_homeActivity_to_libraryActivity)
+//                .navigate(R.id.action_homeActivity_to_bismillahActivity)
+//        }
+//        binding.Zikir.setOnClickListener {
+//            Navigation.findNavController(binding.root)
+//                .navigate(R.id.action_homeActivity_to_zikirActivity)
+//        }
+//
+//        binding.TatihBtn.setOnClickListener {
+//            Navigation.findNavController(binding.root)
+//                .navigate(R.id.action_homeActivity_to_historyFragment)
+//        }
+
+//        binding.Qosymsha.setOnClickListener {
+//            Navigation.findNavController(binding.root)
+//                .navigate(R.id.action_homeActivity_to_fullScheduleFragment)
 //        }
 //        val view = inflater.inflate(R.layout.fragment_home_activity, container, false)
 //        val quranBtn: Button = view.findViewById(R.id.QuranBtn)
