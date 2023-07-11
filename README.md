@@ -2,4 +2,4 @@
 Final project
 
 
-Galymzhan Tolepebrgen
+Amanzhol Nursultan
